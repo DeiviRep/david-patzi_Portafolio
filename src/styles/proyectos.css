@@ -1,0 +1,137 @@
+.name-seccion h1 {
+  font-size: 5em;
+  font-style: oblique;
+  animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #8e6de7, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.seccion-proyectos {
+  padding: 10px 100px;
+  margin-top: 3rem;
+  background: #334d50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #03957e,
+    #000000,
+    #131212
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #03957e,
+    #000000,
+    #131212
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box-content-proyectos {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-content: space-around;
+}
+.content-proyecto {
+  background-color: rgba(
+    33,
+    33,
+    33,
+    0.5
+  ); /* #212121 con una opacidad del 50% */
+  border-radius: 24px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.content-img-proyect {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  padding: 10px 10px;
+}
+.content-img-proyect img {
+  border-radius: 24px;
+  width: 100%;
+}
+.content-button {
+  width: 100%;
+  padding: 5px 10px;
+}
+.content-button button {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border: 0 solid #000000;
+}
+.button {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #03957e;
+}
+.item-name-descripcion {
+  padding: 5px 10px;
+  color: #aeaeae;
+  width: 100%;
+}
+.item-name-descripcion p {
+  width: 100%;
+}
+.content-tecnologia {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.item-name-tecnologia {
+  border-radius: 3px;
+  background-color: #272727;
+  margin-left: 10px;
+  padding: 6px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .seccion-proyectos {
+    /* grid-template-columns: 100%; */
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .seccion-proyectos {
+  }
+}
+@media screen and (max-width: 687px) {
+  .seccion-proyectos {
+    /* grid-template-columns: 100%; */
+    padding: 0 50px;
+  }
+
+  .conten1,
+  .conten2 {
+  }
+}

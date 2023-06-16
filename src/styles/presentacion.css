@@ -1,0 +1,65 @@
+.seccion-presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.name-especiality {
+  color: #07fcd7;
+  backdrop-filter: blur(7px);
+  background-color: rgba(17, 21, 43, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-especiality p {
+    font-size: 18px;
+    margin: 2px;
+}
+.foto-perfil {
+  position: absolute;
+  bottom: 200px;
+}
+.foto-perfil img {
+  width: 10rem;
+  border-radius: 50%;
+}
+.saludo{
+    display: flex;
+    padding: 30px 0;
+    margin-bottom: 4rem;
+    justify-content: center;
+    /* font-size: 5em; */
+    color: #07fcd7;  
+}
+.saludo h1{
+  font-size: 3em;
+}
+.scrolling-img {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/baner/baner3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff; /* Color del texto */
+  padding: 20px;
+  height: 400px; /* Altura del contenedor */
+  /* Ajustes para centrar y mover la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 687px) {
+  .saludo {
+    /* grid-template-columns: 100%; */
+    padding: 30px 50px;
+    margin-bottom: 30px;
+  }
+  
+  .conten1, .conten2 {
+  }
+}

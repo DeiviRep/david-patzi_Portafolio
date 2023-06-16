@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+.seccion-contacto {
+  height: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #131212;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.content-contact {
+  display: flex;
+  flex-direction: column;
+}
+.seccion-contacto h1 {
+  font-size: 3em;
+  color: #07fcd7;
+  margin-bottom: 5rem;
+}
+.footer {
+  position: relative;
+  text-align: center;
+}
+.boton {
+  padding: 2vh 5vw;
+  background-color: #3b3c40;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(
+    circle at 0% 100%,
+    #303033 20%,
+    #38393a 40%,
+    #3b3c41 100%
+  );
+  transition: all 0.5s;
+}
+.boton:hover {
+  cursor: pointer;
+  border: 1.5px solid rgba(82, 222, 229);
+  background: #131212;
+}
+.boton:hover {
+  color: #52dee5;
+}
+.boton {
+  width: 100%;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #52dee5;
+  font-size: 17.8px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+.content-frases p {
+  font-family: "La Belle Aurore", "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
+  font-size: 30px;
+}
+.content-email {
+  display: flex;
+  align-self: center;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.content-social {
+  display: flex;
+}
+.content-social a {
+  color: #52dee5;
+  text-decoration: none;
+}
+.icono-social {
+  font-size: 2.4rem !important;
+  border-radius: 3px;
+}
+.icono-social:hover {
+  background-color: #303033;
+}
+
+@media screen and (max-width: 1000px) {
+  .seccion-contacto {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 687px) {
+  .seccion-contacto {
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width: 687px) {
+    .saludo {
+      /* grid-template-columns: 100%; */
+      padding: 30px 50px;
+      margin-bottom: 30px;
+    }
+    
+    .conten1, .conten2 {
+    }
+  }
