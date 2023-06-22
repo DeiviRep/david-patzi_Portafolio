@@ -38,6 +38,10 @@ import baner from "./img/baner/baner1.jpg";
 import fotoPerfil from "./img/baner/DavidFoto.webp";
 import Presentacion from "./components/Presentacion";
 import { Element } from "react-scroll";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function App() {
   let acercade = [
@@ -163,9 +167,27 @@ function App() {
       especialidad2: "Developer App",
     },
   ];
+  const social = [
+    {
+      social: FacebookIcon,
+      url: "https://www.facebook.com/profile.php?id=100075852762882",
+    },
+    {
+      social: LinkedInIcon,
+      url: "https://acortar.link/bgcEVl",
+    },
+    {
+      social: GitHubIcon,
+      url: "https://github.com/DeiviRep",
+    },
+    {
+      social: MailOutlineIcon,
+      url: "mailto:patzivargasdavid@gmail.com?subject=Apacionados por el desarrollo&body=Hola soy David Patzi escribe aqui la consulta que tengas. :)",
+    },
+  ];
   return (
     <>
-      <Navar logo={logo} />
+      <Navar logo={logo} social={social}/>
       <div className="cajon">
         <Presentacion presentacion={presentacion} />
         <Element name="seccionAcercade">
@@ -180,7 +202,7 @@ function App() {
         <Element name="seccion-Contactame">
           <Contacto contacto={contacto} />
         </Element>
-        <Footer footer={footer} />
+        <Footer footer={footer} social={social} />
       </div>
     </>
   );
