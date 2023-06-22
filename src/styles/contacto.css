@@ -15,7 +15,7 @@
 }
 .seccion-contacto h1 {
   font-size: 3em;
-  color: #07fcd7;
+  color: #00dae8;
   margin-bottom: 5rem;
 }
 .footer {
@@ -43,7 +43,7 @@
   background: #131212;
 }
 .boton:hover {
-  color: #52dee5;
+  color: #00dae8;
 }
 .boton {
   width: 100%;

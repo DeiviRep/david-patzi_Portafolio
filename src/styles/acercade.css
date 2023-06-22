@@ -16,6 +16,9 @@
   font-weight: 600;
   font-style: oblique;
 }
+.acercade a:hover {
+  color: #00dae8;
+}
 .descripcion h1 {
   font-size: 5em;
   font-style: oblique;

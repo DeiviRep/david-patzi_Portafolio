@@ -3,19 +3,23 @@ import "../styles/nav.css";
 import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
 import WidgetsIcon from "@mui/icons-material/Widgets";
+import ContactsIcon from '@mui/icons-material/Contacts';
+import DevicesIcon from '@mui/icons-material/Devices';
+import CodeIcon from '@mui/icons-material/Code';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CloseIcon from "@mui/icons-material/Close";
 
 const Navar = ({ logo }) => {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
-  const [visible, setVisible] = useState("");
+  const [visible, setVisible] = useState("close_nav");
   const open_nav = () => {
-    setVisible("visible");
+    setVisible("open_nav");
   };
   const close_nav = () => {
-    setVisible("");
-  }
+    setVisible("close_nav");
+  };
   return (
     <>
       <header className="header">
@@ -37,7 +41,8 @@ const Navar = ({ logo }) => {
                 smooth={true}
                 duration={600}
               >
-                Acerca de mi
+                <AccountCircleIcon id="ico-link" />
+                <p>Acerca de mi</p>
               </Link>
             </li>
             <li>
@@ -47,7 +52,8 @@ const Navar = ({ logo }) => {
                 smooth={true}
                 duration={600}
               >
-                Mis habilidades
+                <CodeIcon id="ico-link" />
+                <p>Mis habilidades</p>
               </Link>
             </li>
             <li>
@@ -57,7 +63,8 @@ const Navar = ({ logo }) => {
                 smooth={true}
                 duration={600}
               >
-                Proyectos realizados
+                <DevicesIcon id="ico-link" />
+                <p>Proyectos realizados</p>
               </Link>
             </li>
             <li>
@@ -67,7 +74,8 @@ const Navar = ({ logo }) => {
                 smooth={true}
                 duration={600}
               >
-                Contáctame
+                <ContactsIcon id="ico-link" />
+                <p>Contáctame</p>
               </Link>
             </li>
           </ul>
