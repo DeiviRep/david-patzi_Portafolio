@@ -6,7 +6,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Contacto = ({ contacto }) => {
-  // console.log(contacto);
   const social = [
     {
       social: FacebookIcon,

@@ -113,6 +113,9 @@
   flex-direction: column;
   row-gap: 0.7rem;
 }
+p {
+  margin: 0;
+}
 .acercade cite {
   margin-left: 40px;
   margin-top: 20px;

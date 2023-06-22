@@ -37,6 +37,7 @@ import ventaCars from "./img/proyectos/ventaCars.avif";
 import baner from "./img/baner/baner1.jpg";
 import fotoPerfil from "./img/baner/DavidFoto.webp";
 import Presentacion from "./components/Presentacion";
+import { Element } from "react-scroll";
 
 function App() {
   let acercade = [
@@ -50,8 +51,7 @@ function App() {
   ];
   let habilidades = [
     {
-      informacion:
-        `He realizado los proyectos responsivos, con una interacción intuitiva y desarrolladas desde el front-end desde cero, he trabajo en proyectos medianos y pequeños usando CSS (para su estilo) y JS para las funciones interactivas, también ise uso de los frameworks de React, Angular y Laravel, También tengo conocimiento de backend, enfocado en PHP y PYTHON usando como Frameworks Laravel para PHP y FLASK para PYTHON.
+      informacion: `He realizado los proyectos responsivos, con una interacción intuitiva y desarrolladas desde el front-end desde cero, he trabajo en proyectos medianos y pequeños usando CSS (para su estilo) y JS para las funciones interactivas, también ise uso de los frameworks de React, Angular y Laravel, También tengo conocimiento de backend, enfocado en PHP y PYTHON usando como Frameworks Laravel para PHP y FLASK para PYTHON.
         Para la interacción con la base de datos, fui creando modelos relacionales con MySQL.
         Ahora tomo en cuenta la creación de Apis en el cual fui capacitado en las pasantias que tome dentro de la empresa de SOFTWARE RACCOON SOLUTIONS, en las cuales a usar apis en Laravel y Lumen.`,
     },
@@ -87,7 +87,7 @@ function App() {
   ];
   let proyectos = [
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Automoviles Responsive",
       url: "https://automoviles-js.netlify.app",
       img: cars,
@@ -95,7 +95,7 @@ function App() {
       tecnologiasUsadas: ["JavaScript", "Html", "Css"],
     },
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Agenda de Planificaciones",
       url: "https://tareas-reactjs.netlify.app",
       img: agregaTarea,
@@ -103,7 +103,7 @@ function App() {
       tecnologiasUsadas: ["React", "Css", "Jsx"],
     },
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Home de una Empresa",
       url: "https://companydevdreamers.netlify.app",
       img: empresaMia,
@@ -111,7 +111,7 @@ function App() {
       tecnologiasUsadas: ["Angular"],
     },
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Venta de Automoviles",
       url: "https://compracars.netlify.app",
       img: ventaCars,
@@ -119,7 +119,7 @@ function App() {
       tecnologiasUsadas: ["React"],
     },
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Portafolio de Prueba",
       url: "https://porfolio-ejemplo.netlify.app",
       img: porfolioPrueba,
@@ -127,7 +127,7 @@ function App() {
       tecnologiasUsadas: ["Html", "Css", "Js"],
     },
     {
-      visitar:'Visitar Página',
+      visitar: "Visitar Página",
       name: "Deporte con Patineta",
       url: "https://animaciones-js.netlify.app",
       img: patineta,
@@ -168,10 +168,18 @@ function App() {
       <Navar logo={logo} />
       <div className="cajon">
         <Presentacion presentacion={presentacion} />
-        <Acercademi acercade={acercade} />
-        <Habilidades habilidades={habilidades} img={imgStack} />
-        <Proyectos proyectos={proyectos} nameSeccion={nameSeccion} />
-        <Contacto contacto={contacto} />
+        <Element name="seccionAcercade">
+          <Acercademi acercade={acercade} />
+        </Element>
+        <Element name="seccion-Habilidades">
+          <Habilidades habilidades={habilidades} img={imgStack} />
+        </Element>
+        <Element name="seccion-Proyectos">
+          <Proyectos proyectos={proyectos} nameSeccion={nameSeccion} />
+        </Element>
+        <Element name="seccion-Contactame">
+          <Contacto contacto={contacto} />
+        </Element>
         <Footer footer={footer} />
       </div>
     </>

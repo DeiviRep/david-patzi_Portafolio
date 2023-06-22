@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/proyectos.css";
 
 const Proyectos = ({ proyectos, nameSeccion }) => {
-  console.log(proyectos);
   const listProyects = proyectos.map((item, index) => (
     <div className="content-proyecto">
       <div className="content-img-proyect">
