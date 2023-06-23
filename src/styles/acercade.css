@@ -147,13 +147,29 @@ p {
     margin-left: 80px;
     margin-top: 30px;
   }
+  .conten1 {
+    width: 80%;
+  }
   .conten2 {
-    width: auto;
+    width: 80%;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 687px) {
   .box-acercade {
     grid-template-columns: 100%;
     padding: 0 50px;
+  }
+  .descripcion h1 {
+    padding-left: 4px;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  .conten1 {
+    width: 80%;
+  }
+  .conten2 {
+    width: 80%;
+    margin-left: 0;
   }
 }

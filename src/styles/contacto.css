@@ -79,4 +79,14 @@
   .seccion-contacto {
     padding: 0 50px;
   }
+  .seccion-contacto h1 {
+    font-size: 2.5em;
+  }
+  .boton {
+    font-size: 1em;
+    padding: 10px;
+  }
+  .content-frases p {
+    font-size: 1.3em;
+  }
 }
