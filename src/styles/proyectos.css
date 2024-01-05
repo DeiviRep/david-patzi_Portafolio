@@ -23,7 +23,6 @@
 .seccion-proyectos {
   padding: 10px 100px;
   margin-top: 3rem;
-  margin-bottom: 2em;
   background: #334d50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -58,13 +57,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px 20px;
+  gap: 1rem;
 }
 .content-img-proyect {
   display: flex;
   justify-content: center;
   height: 200px;
-  padding: 10px 10px;
+  width: 100%;
 }
 .content-img-proyect img {
   border-radius: 24px;
@@ -77,24 +77,21 @@
 .content-button button {
   width: 100%;
   padding: 10px 10px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 0.5rem;
-  border-color: transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border: 0 solid #000000;
-}
-.button {
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #212121;
+  color: #272727;
 }
+
 .button:hover {
   cursor: pointer;
-  background-color: #03957e;
+  color: aqua;
+  background-color: #272727;
+  border: 1px solid aqua;
 }
 .item-name-descripcion {
   padding: 5px 10px;
@@ -106,15 +103,13 @@
 }
 .content-tecnologia {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
-  row-gap: 10px;
-  align-items: center;
-  padding: 5px 10px;
+  gap:1rem;
 }
 .item-name-tecnologia {
   border-radius: 3px;
   background-color: #272727;
-  margin-left: 10px;
   padding: 6px 10px;
 }
 

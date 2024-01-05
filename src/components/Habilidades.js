@@ -61,7 +61,11 @@ const Habilidades = ({ habilidades, img }) => {
       <div className="seccion-habilidades" id="habilidades">
         <h1>Mis Habilidades</h1>
         <div className="box-habilidades">
-          <p>{habilidades[0].informacion}</p>
+          <div className="habilidades-informacion">
+            <p>{habilidades.informacion}</p>
+            <p>{habilidades.informacion2}</p>
+            <p>{habilidades.informacion3}</p>
+          </div>
           {imagenes}
         </div>
       </div>
