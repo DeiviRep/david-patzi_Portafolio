@@ -2,14 +2,13 @@ import React from "react";
 import "../styles/proyectos.css";
 
 const Proyectos = ({ proyectos, nameSeccion }) => {
-  console.log(proyectos);
   const listProyects = proyectos.map((item, index) => (
     <div className="content-proyecto">
       <div className="content-img-proyect">
         <img src={item.img} alt="imageProyecto" />
       </div>
       <div className="content-button">
-        <a href={item.url} target="_blank">
+        <a href={item.url} target="_blank" rel="noreferrer">
           <button className="button">{item.visitar}</button>
         </a>
       </div>

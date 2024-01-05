@@ -28,17 +28,20 @@
   display: flex;
   list-style: none;
 }
-.nav ul li a{
+.nav ul li a p{
   text-decoration: none;
   color: #fafafa;
   font-size: 16px;
   font-weight: 400;
   margin: 0px 26px;
 }
-.nav ul li:hover a{
+.nav ul li:hover a p{
   color: aqua;
   cursor: pointer;
 }
 .logo {
   width: 60px;
+}
+.logo:hover {
+  cursor: pointer;
 }

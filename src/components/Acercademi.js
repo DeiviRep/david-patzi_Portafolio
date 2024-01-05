@@ -4,19 +4,22 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const Acercademi = ({ acercade }) => {
   return (
-    <>
+    <div className="box-acercade-saludo">
+      <div className="saludo">
+        <h1>¡Bienvenido/a a mi portafolio!</h1>
+      </div>
       <div className="box-acercade" id="acercade">
         <section className="descripcion">
-          <h1>{acercade[0].name}</h1>
+          <h1>{acercade.name}</h1>
           <div className="acercade">
             <p>
-              {acercade[0].informacion}
+              {acercade.informacion}
               <a href="#contact">
                 <ArrowRightIcon />
                 Contactar
               </a>
             </p>
-            <cite>{acercade[0].etiqueta}</cite>
+            <cite>{acercade.etiqueta}</cite>
           </div>
         </section>
         <section className="presentacion">
@@ -44,14 +47,13 @@ const Acercademi = ({ acercade }) => {
             </p>
             <div className="content-array">
               <p class="p">
-                Profesion:{" "}
-                <span>Desarrollador web y de apps moviles;</span>
+                Profesion: <span>Desarrollador web y de apps moviles;</span>
               </p>
               <p class="p">
                 Markup: <span>HTML;</span>
               </p>
               <p class="p">
-                Back-End: <span>[ PHP, PYTHON, JS ];</span>
+                Back-End: <span>[ JAVA, PYTHON, JAVA-SCRIPT ];</span>
               </p>
             </div>
             <p>
@@ -61,7 +63,7 @@ const Acercademi = ({ acercade }) => {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

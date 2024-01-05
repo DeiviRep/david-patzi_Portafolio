@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 .seccion-contacto {
   height: auto;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  padding:2rem 100px;
   background-color: #131212;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -15,7 +12,7 @@
 }
 .seccion-contacto h1 {
   font-size: 3em;
-  color: #07fcd7;
+  color: #00dae8;
   margin-bottom: 5rem;
 }
 .footer {
@@ -43,7 +40,7 @@
   background: #131212;
 }
 .boton:hover {
-  color: #52dee5;
+  color: #00dae8;
 }
 .boton {
   width: 100%;
@@ -67,30 +64,26 @@
   text-decoration: none;
   margin-bottom: 2rem;
 }
-.content-social {
-  display: flex;
-}
-.content-social a {
-  color: #52dee5;
-  text-decoration: none;
-}
-.icono-social {
-  font-size: 2.4rem !important;
-  border-radius: 3px;
-}
-.icono-social:hover {
-  background-color: #303033;
-}
 
 @media screen and (max-width: 1000px) {
   .seccion-contacto {
-    padding: 0 80px;
+    padding: 1rem 80px;
     display: flex;
     flex-direction: column;
 }
 }
 @media screen and (max-width: 687px) {
   .seccion-contacto {
-    padding: 0 50px;
+    padding: 1rem 50px;
+  }
+  .seccion-contacto h1 {
+    font-size: 2.5em;
+  }
+  .boton {
+    font-size: 1em;
+    padding: 10px;
+  }
+  .content-frases p {
+    font-size: 1.3em;
   }
 }

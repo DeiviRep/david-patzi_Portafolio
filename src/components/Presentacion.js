@@ -16,9 +16,6 @@ const Presentacion = ({ presentacion }) => {
           <img src={presentacion[0].foto} alt="" />
         </div> */}
       </div>
-      <div className="saludo">
-        <h1>{presentacion[0].saludo}</h1>
-      </div>
     </>
   );
 };

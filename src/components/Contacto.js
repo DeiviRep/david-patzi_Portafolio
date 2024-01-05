@@ -1,39 +1,13 @@
 import React from "react";
 import "../styles/contacto.css";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-
+import MailOutlineIcon from "@mui/icons-material/MailOutline"
 const Contacto = ({ contacto }) => {
-  // console.log(contacto);
-  const social = [
-    {
-      social: FacebookIcon,
-    },
-    {
-      social: LinkedInIcon,
-    },
-    {
-      social: GitHubIcon,
-    },
-  ];
-  const mostrarSocial = social.map((itemSocial, index) => {
-    const Icono = itemSocial.social;
-    return (
-      <a href="#$">
-        <Icono className="icono-social"/>
-      </a>
-    );
-  });
-
+  
   return (
     <>
       <div className="seccion-contacto" id="contact">
         <div className="content-contact">
           <h1>Contáctame</h1>
-
-          {/* <a href={contacto[0].url}>{contacto[0].url}</a> */}
           <a
             className="content-email"
             rel="nofollow"
@@ -44,7 +18,6 @@ const Contacto = ({ contacto }) => {
               patzivargasdavid@gmail.com
             </button>
           </a>
-          <div className="content-social">{mostrarSocial}</div>
         </div>
         <div className="content-frases">
           <p className="frase">{contacto[0].frase1}</p>

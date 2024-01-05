@@ -1,7 +1,16 @@
+.box-acercade-saludo{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/baner/gradiantsColor.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .box-acercade {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 0 100px;
+  padding: 1rem 100px;
 }
 .acercade {
   width: 80%;
@@ -15,6 +24,9 @@
   justify-content: flex-start;
   font-weight: 600;
   font-style: oblique;
+}
+.acercade a:hover {
+  color: #00dae8;
 }
 .descripcion h1 {
   font-size: 5em;
@@ -42,7 +54,6 @@
 }
 .acercade {
   margin-top: 40px;
-  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
   display: flex;
@@ -51,7 +62,7 @@
 }
 .presentacion {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 3em;
 }
 .conten1 {
@@ -113,6 +124,9 @@
   flex-direction: column;
   row-gap: 0.7rem;
 }
+p {
+  margin: 0;
+}
 .acercade cite {
   margin-left: 40px;
   margin-top: 20px;
@@ -122,7 +136,7 @@
 @media screen and (max-width: 1000px) {
   .box-acercade {
     grid-template-columns: 100%;
-    padding: 0 80px;
+    padding: 1rem 80px;
   }
   .acercade cite {
     margin-left: 80px;
@@ -131,23 +145,44 @@
   .conten2 {
     width: 400px;
   }
+  .box-acercade {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:inherit;
+  }
 }
 @media screen and (max-width: 800px) {
   .box-acercade {
     grid-template-columns: 100%;
-    padding: 0 80px;
+    padding: 1rem 80px;
   }
   .acercade cite {
     margin-left: 80px;
     margin-top: 30px;
   }
+  .conten1 {
+    width: 80%;
+  }
   .conten2 {
-    width: auto;
+    width: 80%;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 687px) {
   .box-acercade {
     grid-template-columns: 100%;
-    padding: 0 50px;
+    padding: 1rem 50px;
+  }
+  .descripcion h1 {
+    padding-left: 4px;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  .conten1 {
+    width: 80%;
+  }
+  .conten2 {
+    width: 80%;
+    margin-left: 0;
   }
 }
