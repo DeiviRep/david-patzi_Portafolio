@@ -1,8 +1,10 @@
 import React from "react";
 import "../styles/acercade.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import useThema from "../styles/palleta";
 
 const Acercademi = ({ acercade }) => {
+  const { thema } = useThema();
   return (
     <div className="box-acercade-saludo">
       <div className="saludo">
@@ -11,14 +13,31 @@ const Acercademi = ({ acercade }) => {
       <div className="box-acercade" id="acercade">
         <section className="descripcion">
           <h1>{acercade.name}</h1>
-          <div className="acercade">
-            <p>
-              {acercade.informacion}
-              <a href="#contact">
+          <div
+            className="acercade"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              // justifyContent:'center',
+              // alignItems:'center',
+            }}
+          >
+            <p>{acercade.informacion}</p>
+            <div>
+              <a
+                href="#contact"
+                style={{
+                  color: thema.palete.light,
+                  borderRadius: "2rem",
+                  padding: "6px",
+                  maxWidth:'120px',
+                }}
+              >
                 <ArrowRightIcon />
                 Contactar
               </a>
-            </p>
+            </div>
             <cite>{acercade.etiqueta}</cite>
           </div>
         </section>
@@ -53,7 +72,7 @@ const Acercademi = ({ acercade }) => {
                 Markup: <span>HTML;</span>
               </p>
               <p class="p">
-                Back-End: <span>[ JAVA, PYTHON, JAVA-SCRIPT ];</span>
+                Back-End: <span>[ JAVA, JAVA-SCRIPT ];</span>
               </p>
             </div>
             <p>

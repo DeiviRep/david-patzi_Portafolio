@@ -91,7 +91,7 @@ function App() {
     {
       visitar: "Visitar Página",
       name: "Gestion de Proyectos",
-      url: "https://test-seguimiento.agcs.agetic.gob.bo/login",
+      url: "https://seguimiento.upat.agetic.gob.bo/login",
       img: gestionProyectos,
       descripcion: "Herramienta para gestionar tus proyectos de desarrollo",
       tecnologiasUsadas: ["NextJs", "NestJs", "TypeScript", "MaterialUI"],

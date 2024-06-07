@@ -89,7 +89,7 @@
 
 .button:hover {
   cursor: pointer;
-  color: aqua;
+  color: #00ffff;
   background-color: #272727;
   border: 1px solid aqua;
 }
