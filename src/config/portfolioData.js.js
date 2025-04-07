@@ -18,29 +18,26 @@ import GitIcon from "../img/iconos/otros/git.svg?react";
 export const technologyIcons = [
   {
     bd: [
-      { name: "posgre", img: PosgreIcon },
-      { name: "workbench", img: WorkbenchIcon },
-      { name: "mongo", img: MongoIcon },
+      { name: "PostgreSQL", img: PosgreIcon },
     ],
     lenguaje: [
-      { name: "html", img: HtmlIcon },
-      { name: "js", img: JsIcon },
-      { name: "css", img: CssIcon },
-      { name: "python", img: PythonIcon },
+      { name: "JavaScript", img: JsIcon },
+      { name: "HTML", img: HtmlIcon },
+      { name: "CSS", img: CssIcon },
+      { name: "Python", img: PythonIcon },
     ],
     framework: [
-      { name: "react", img: ReactIcon },
-      { name: "laravel", img: LaravelIcon },
-      { name: "flutter", img: FlutterIcon },
+      { name: "React", img: ReactIcon },
+      { name: "Flutter", img: FlutterIcon },
+      { name: "Laravel", img: LaravelIcon },
       { name: "android", img: AndroidIcon },
     ],
     lib: [
-      { name: "nodejs", img: NodejsIcon },
-      { name: "bootstrap", img: BootstrapIcon },
+      { name: "Node.js", img: NodejsIcon },
     ],
     editores: [
-      { name: "github", img: GithubIcon },
-      { name: "git", img: GitIcon },
+      { name: "GitHub", img: GithubIcon },
+      { name: "Git", img: GitIcon },
     ],
   },
 ];
@@ -78,20 +75,18 @@ export const socialLinks = [
 
 // About Me Data
 export const aboutMeData = {
-  name: "Acerca de mi",
-  informacion: `Mi nombre es David Bernardo Patzi Vargas, soy un desarrollador web y móvil. Durante los últimos 4 años, he estado dedicando tiempo y esfuerzo para perfeccionar mis habilidades en el desarrollo web y iOS. 
-    He completado varios proyectos, principalmente en la creación de páginas web. Actualmente, me encuentro inmerso en el aprendizaje de inteligencia artificial para poder integrarla en mis futuros proyectos`,
+  name: "Acerca de mí",
+  informacion: `Soy David Patzi, un desarrollador de software full-stack apasionado por crear soluciones innovadoras y escalables. En los últimos años, he perfeccionado mis habilidades en tecnologías como Node.js, Next.js y TypeScript, trabajando en proyectos que combinan diseño frontend y lógica backend robusta. Actualmente, estoy explorando blockchain, fascinado por su potencial para garantizar seguridad y transparencia en el manejo de datos. También estoy comprometido con mejorar mi inglés para colaborar en equipos globales.`,
   etiqueta:
-    "Me apaciona el mundo del desarrollo y mi sueño es formar parte de compañías como Google, Amazon, Facebook, realizando proyectos que mejoren el mundo.",
+    "Mi meta es contribuir en empresas innovadoras, creando tecnología que marque la diferencia, mientras crezco y disfruto cada desafío del camino.",
 };
 
 // Skills Data
 export const skillsData = {
-  informacion: `Realise proyectos responsivos, con una buena experiencia de usuario UI/UX, en proyectos medianos y pequeños usando CSS (para su estilo) y JS para las funciones interactivas.`,
-  informacion2: `My stack de desarrollo para el desarrollo web son: frontend(React, NextJs y Angular), backend(NestJs, Spring Boot), GitLab, GitHub, Docker, WebSockets entre otras tecnologias`,
+  informacion: `He trabajado en proyectos responsivos y con buena experiencia de usuario (UI/UX).`,
+  informacion2: `Mi stack de desarrollo incluye tecnologías como React, Next.js, Angular (frontend), y Nest.js, Spring Boot (backend).`,
   informacion3: `
-        Para la creacion de base de datos hago uso de MySql y PostgreSql,
-        Tengo experiencia con TypeScript obtenidas en 3 proyectos recientes elboradas con NextJs y NestJs.`,
+        Uso MySQL y PostgreSQL, además tengo experiencia con TypeScript en proyectos recientes.`,
 };
 
 // Projects Data
@@ -101,48 +96,48 @@ export const projectsData = [
     name: "Sistema de Gestión Académica YATIC",
     url: "https://yatic.agetic.gob.bo/portal",
     img: projectImages.yatic,
-    descripcion: "Sistema de Gestión Académica YATIC",
-    tecnologiasUsadas: ["NextJs", "NestJs", "TypeScript", "MaterialUI"],
+    descripcion: "Desarrollé un sistema completo de gestión académica para YATIC, integrando frontend y backend con tecnologías modernas para optimizar la administración de datos académicos.",
+    tecnologiasUsadas: ["Next.js", "Nest.js", "TypeScript", "MaterialUI", "PostgreSQL", "Docker", "Figma"],
   },
     {
       visitar: "Visitar Página",
-      name: "Automoviles Responsive",
+      name: "Galería de Automóviles Responsiva",
       url: "https://automoviles-js.netlify.app",
       img: projectImages.cars,
-      descripcion: "Exhibición de automóviles de gama alta",
+      descripcion: "Creé una galería interactiva para exhibir automóviles de lujo, con un diseño responsivo que garantiza una experiencia fluida en cualquier dispositivo.",
       tecnologiasUsadas: ["JavaScript", "Html", "Css"],
     },
     {
       visitar: "Visitar Página",
-      name: "Home de una Empresa",
+      name: "Prototipo de Página Principal para Empresa",
       url: "https://companydevdreamers.netlify.app",
       img: projectImages.empresaMia,
-      descripcion: "Diseño de la pagina prinicipal para empresas de desarrollo",
-      tecnologiasUsadas: ["Angular"],
+      descripcion: "Diseñé un prototipo de página principal para una empresa de desarrollo de software, utilizando un diseño moderno y componentes reutilizables en Angular.",
+      tecnologiasUsadas: ["Angular", "JavaScript", "TypeScript", "Html", "Css"],
     },
     {
       visitar: "Visitar Página",
-      name: "Venta de Automoviles",
+      name: "Plataforma de Venta de Automóviles",
       url: "https://compracars.netlify.app",
       img: projectImages.ventaCars,
-      descripcion: "Pagina para comprar automoviles",
-      tecnologiasUsadas: ["React"],
+      descripcion: "Desarrollé una plataforma dinámica para la compra de automóviles, con un frontend en React que ofrece una navegación intuitiva y amigable.",
+      tecnologiasUsadas: ["React", "JavaScript", "Html", "Css"],
     },
     {
       visitar: "Visitar Página",
       name: "Portafolio de Prueba",
       url: "https://porfolio-ejemplo.netlify.app",
       img: projectImages.porfolioPrueba,
-      descripcion: "Portafolio para un desarrollador web",
-      tecnologiasUsadas: ["Html", "Css", "Js"],
+      descripcion: "Construí un portafolio de prueba para un desarrollador web, aplicando buenas prácticas de diseño y desarrollo frontend para destacar proyectos y habilidades.",
+      tecnologiasUsadas: ["HTML", "CSS", "JavaScript"],
     },
     {
       visitar: "Visitar Página",
-      name: "Deporte con Patineta",
+      name: "Blog de Deportes",
       url: "https://animaciones-js.netlify.app",
       img: projectImages.patineta,
-      descripcion: "Block para amantes del deporte en patineta",
-      tecnologiasUsadas: ["Html", "Css", "JavaScript"],
+      descripcion: "Desarrollé un blog interactivo para amantes del skateboarding, incorporando animaciones personalizadas para enriquecer la experiencia del usuario.",
+      tecnologiasUsadas: ["HTML", "CSS", "JavaScript"],
     },
   // ... (other projects follow the same pattern)
 ];
@@ -150,7 +145,7 @@ export const projectsData = [
 // Section Names
 export const sectionNames = [
   {
-    name: "Proyectos 2024 realizados",
+    name: "Proyectos 2024 Realizados",
   },
 ];
 
@@ -160,7 +155,7 @@ export const contactData = [
     tipo: "email",
     url: "patzivargasdavid@gmail.com",
     frase1: "Deseas realizar tu proyecto?",
-    frase2: "Contactame estamos para servir ; )",
+    frase2: "Contáctame, estamos para servir ; )",
   },
 ];
 
@@ -177,8 +172,7 @@ export const presentationData = [
     foto: portfolioImages.fotoPerfil,
     img: portfolioImages.baner,
     saludo: "¡Bienvenido/a a mi portafolio!",
-    nivel: "FULLSTACK",
-    especialidad1: "Developer Web",
-    especialidad2: "Developer App",
+    nivel: "Full Stack Developer",
+    especialidad1: "Developer Software",
   },
 ];
