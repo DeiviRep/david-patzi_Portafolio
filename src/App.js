@@ -40,11 +40,11 @@ function App() {
         <Element name="seccionAcercade">
           <Acercademi acercade={aboutMeData} />
         </Element>
-        <Element name="seccion-Habilidades">
-          <Habilidades habilidades={skillsData} img={technologyIcons} />
-        </Element>
         <Element name="seccion-Proyectos">
           <Proyectos proyectos={projectsData} nameSeccion={sectionNames} />
+        </Element>
+        <Element name="seccion-Habilidades">
+          <Habilidades habilidades={skillsData} img={technologyIcons} />
         </Element>
         <Element name="seccion-Contactame">
           <Contacto contacto={contactData} />

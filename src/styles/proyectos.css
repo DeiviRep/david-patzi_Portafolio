@@ -21,21 +21,13 @@
   }
 }
 .seccion-proyectos {
-  padding: 10px 100px;
-  margin-top: 3rem;
-  background: #334d50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #03957e,
-    #000000,
-    #131212
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #03957e,
-    #000000,
-    #131212
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1rem 100px 4rem 100px;
+  margin-top: 1rem;
+  background-image: url('../img/baner/gradiantsColor.png');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  background-position: center;
 }
 .box-content-proyectos {
   margin-top: 3rem;

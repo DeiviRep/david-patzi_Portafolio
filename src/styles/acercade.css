@@ -1,7 +1,8 @@
 .box-acercade-saludo{
   display: flex;
   flex-direction: column;
-  background-image: url('../img/baner/gradiantsColor.png');
+  padding: 2rem 0px;
+  /* background-image: url('../img/baner/gradiantsColor2.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -16,9 +17,42 @@
   width: 80%;
   height: auto;
 }
+
+.acercade a {
+  padding: 2vh 5vw;
+  background-color: #3b3c40;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(
+    circle at 0% 100%,
+    #303033 20%,
+    #38393a 40%,
+    #3b3c41 100%
+  );
+  transition: all 0.5s;
+}
+.acercade a:hover {
+  cursor: pointer;
+  border: 1.5px solid rgba(82, 222, 229);
+  background: #131212;
+}
+
+.acercade a {
+  width: 100%;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #52dee5 !important;
+  font-size: 17.8px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+
 .acercade a {
   color: #0cfad4;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -26,7 +60,7 @@
   font-style: oblique;
 }
 .acercade a:hover {
-  color: #00dae8;
+  color: rgba(82, 222, 229) !important;
 }
 .descripcion h1 {
   font-size: 5em;

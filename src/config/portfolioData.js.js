@@ -56,7 +56,7 @@ export const projectImages = {
 export const portfolioImages = {
   logo: require("../img/LOGOporfolio.jpeg"),
   baner: require("../img/baner/baner1.jpg"),
-  fotoPerfil: require("../img/baner/DavidFoto.webp"),
+  fotoPerfil: require("../img/baner/perfilAzul.jpeg"),
 };
 
 // Social Links
@@ -145,7 +145,7 @@ export const projectsData = [
 // Section Names
 export const sectionNames = [
   {
-    name: "Proyectos 2024 Realizados",
+    name: "Proyectos Realizados",
   },
 ];
 
