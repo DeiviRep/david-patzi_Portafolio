@@ -50,14 +50,14 @@ const Navar = ({ logo, social }) => {
       IcoLink: AccountCircleIcon,
     },
     {
-      to: "seccion-Habilidades",
-      parrafo: "Mis habilidades",
-      IcoLink: CodeIcon,
-    },
-    {
       to: "seccion-Proyectos",
       parrafo: "Proyectos realizados",
       IcoLink: DevicesIcon,
+    },
+    {
+      to: "seccion-Habilidades",
+      parrafo: "Mis habilidades",
+      IcoLink: CodeIcon,
     },
     { to: "seccion-Contactame", parrafo: "Contáctame", IcoLink: ContactsIcon },
   ];

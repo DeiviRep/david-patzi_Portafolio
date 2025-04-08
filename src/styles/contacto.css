@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 .seccion-contacto {
   border-top: #3b3c40 1px solid;
+  border-bottom: #3b3c40 1px solid;
   height: 100% !important;
   max-height: 1000px !important;
   padding:4rem 100px 6rem 100px;
@@ -39,7 +40,7 @@
 .boton:hover {
   cursor: pointer;
   border: 1.5px solid rgba(82, 222, 229);
-  background: #131212;
+  background: #1f1d1d;
 }
 .boton:hover {
   color: #00dae8;

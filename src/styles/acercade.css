@@ -1,7 +1,7 @@
 .box-acercade-saludo{
   display: flex;
   flex-direction: column;
-  padding: 2rem 0px;
+  padding: 3rem 0px;
   /* background-image: url('../img/baner/gradiantsColor2.png'); */
   background-repeat: no-repeat;
   background-size: cover;

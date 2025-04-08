@@ -11,8 +11,8 @@
   display: none;
 }
 .activado p {
-  border-bottom: #07fcd7 1px solid;
-  color: #00dae8;
+  /* border-bottom: #07fcd7 1px solid; */
+  color: #00dae8 !important;
 }
 .flecha-sube {
   background-color: #0072e543;

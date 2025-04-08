@@ -21,11 +21,11 @@
   }
 }
 .seccion-proyectos {
-  padding: 1rem 100px 4rem 100px;
+  padding: 0.6rem 100px 4rem 100px;
   margin-top: 1rem;
-  background-image: url('../img/baner/gradiantsColor.png');
+  background-image: url('../img/baner/gradiantsColor2.png');
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   /* background-attachment: fixed; */
   background-position: center;
 }
