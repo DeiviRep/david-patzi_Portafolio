@@ -76,9 +76,9 @@ export const socialLinks = [
 // About Me Data
 export const aboutMeData = {
   name: "Acerca de mí",
-  informacion: `Soy David Patzi, un desarrollador de software full-stack apasionado por crear soluciones innovadoras y escalables. En los últimos años, he perfeccionado mis habilidades en tecnologías como Node.js, Next.js y TypeScript, trabajando en proyectos que combinan diseño frontend y lógica backend robusta. Actualmente, estoy explorando blockchain, fascinado por su potencial para garantizar seguridad y transparencia en el manejo de datos. También estoy comprometido con mejorar mi inglés para colaborar en equipos globales.`,
+  informacion: `Desarrollando desde 2022. Soy Ingeniero de Software Full Stack y resido en La Paz, Bolivia. Me especializo en la creación de soluciones escalables e innovadoras, con experiencia en Nest.js, Next.js y TypeScript. Mi curiosidad por conceptos como descentralización y Ethereum me llevó a explorar el potencial de blockchain para la seguridad y transparencia en datos. Actualmente, lo aplico en mi tesis mientras sigo aprendiendo. En mi tiempo libre, mejoro mi inglés para colaborar con equipos globales y ampliar mis horizontes profesionales. Contáctame. ¿Quieres conectar? Escríbeme.`,
   etiqueta:
-    "Mi meta es contribuir en empresas innovadoras, creando tecnología que marque la diferencia, mientras crezco y disfruto cada desafío del camino.",
+    "Mi anhelo es crear tecnologías intuitivas y elegantes que no solo resuelvan problemas, sino que inspiren y transformen la manera en que trabajamos y vivimos.",
 };
 
 // Skills Data
@@ -172,7 +172,7 @@ export const presentationData = [
     foto: portfolioImages.fotoPerfil,
     img: portfolioImages.baner,
     saludo: "¡Bienvenido/a a mi portafolio!",
-    nivel: "Full Stack Developer",
+    nivel: "Full Stack Software Engineer",
     especialidad1: "Developer Software",
   },
 ];

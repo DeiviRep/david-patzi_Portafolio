@@ -11,7 +11,6 @@
   display: none;
 }
 .activado p {
-  /* border-bottom: #07fcd7 1px solid; */
   color: #00dae8 !important;
 }
 .flecha-sube {
@@ -21,7 +20,7 @@
   align-items: center;
   border-radius: 50%;
   position: fixed;
-  top: 600px;
+  top: 540px;
   right: 40px;
   z-index: 10;
   transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -35,7 +34,7 @@
   padding: 2.6px;
 }
 .flecha-sube:hover #ico-sube {
-  color: #212121;
+  color: #191919;
 }
 @media screen and (max-width: 788px) {
   .nav ul {
@@ -71,10 +70,10 @@
     display: inline;
     margin-right: 1.5rem;
     cursor: pointer;
-    background-color: #212121;
+    background: #191919;
     border-radius: 3px;
-    border: 0px solid #212121;
-    color: #fafafa;
+    border: 0px solid #191919;
+    color: #ffffff;
   }
   .menu-open:hover .ico_open {
     transition: all 0.5s ease-in-out;
@@ -87,10 +86,10 @@
     display: inline;
     margin-right: 1.5rem;
     cursor: pointer;
-    background-color: #212121;
+    background-color: #191919;
     border-radius: 3px;
-    border: 0px solid #212121;
-    color: #fafafa;
+    border: 0px solid #191919;
+    color: #ffffff;
   }
   .menu-close:hover .ico_close {
     transition: all 0.5s ease-in-out;
@@ -101,7 +100,7 @@
     position: fixed;
     top: 70px;
     flex-direction: column;
-    background-color: #131212;
+    background-color: #191919;
     border-radius: 3px;
     padding: 20px 20px;
     right: 0;
@@ -154,7 +153,6 @@
     position: fixed;
     top: 70px;
     flex-direction: column;
-    background-color: #131212;
     border-radius: 3px;
     padding: 20px;
     right: 0;

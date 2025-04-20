@@ -8,7 +8,7 @@ const Acercademi = ({ acercade }) => {
   return (
     <div className="box-acercade-saludo">
       <div className="saludo">
-        <h1>¡Bienvenido/a a mi portafolio!</h1>
+        <h1 style={{  color: "#ffffff", margin: "0", fontWeight: "normal"}}>¡Bienvenido/a a mi portafolio!</h1>
       </div>
       <div className="box-acercade" id="acercade">
         <section className="descripcion">

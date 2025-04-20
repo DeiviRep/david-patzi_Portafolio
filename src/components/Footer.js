@@ -17,7 +17,7 @@ const Footer = ({ footer,social }) => {
     <>
       <footer className="footer">
         <div className="content-social">{mostrarSocial}</div>
-        <p>{footer[0].copirigth}</p>
+        <p style={{color: "#ffffff"}}>{footer[0].copirigth} 👋👋👋👋👋</p>
       </footer>
     </>
   );

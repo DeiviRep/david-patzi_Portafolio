@@ -14,63 +14,52 @@
   padding: 1rem 100px;
 }
 .acercade {
+  line-height: 24px;
   width: 80%;
   height: auto;
 }
 
 .acercade a {
   padding: 2vh 5vw;
-  background-color: #3b3c40;
   text-decoration: none;
   border-radius: 10px;
   margin-bottom: 2vh;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: radial-gradient(
-    circle at 0% 100%,
-    #303033 20%,
-    #38393a 40%,
-    #3b3c41 100%
-  );
+  background: #303030;
+  border: 1px solid rgba(46, 20, 20, 0.08);
   transition: all 0.5s;
 }
 .acercade a:hover {
   cursor: pointer;
   border: 1.5px solid rgba(82, 222, 229);
-  background: #131212;
+  background: #191919;
+  color: rgba(82, 222, 229) !important;
 }
 
 .acercade a {
   width: 100%;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: #52dee5 !important;
-  font-size: 17.8px;
-  font-weight: 400;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 16px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   column-gap: 0.2rem;
-}
-
-.acercade a {
-  color: #0cfad4;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-weight: 600;
   font-style: oblique;
 }
-.acercade a:hover {
-  color: rgba(82, 222, 229) !important;
-}
+
 .descripcion h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-style: oblique;
   animation: fluido 10s ease-in-out infinite;
-  background: linear-gradient(-45deg, #ee7752, #8e6de7, #23a6d5, #23d5ab);
+  background-image: linear-gradient(-45deg, #cb0293 22%, #1433d8, #52dee5);
   background-size: 300%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 18px 0px;
 }
 @keyframes fluido {
   0% {
@@ -87,9 +76,6 @@
   height: auto;
 }
 .acercade {
-  margin-top: 40px;
-  font-size: 16px;
-  font-weight: 400;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -100,16 +86,19 @@
   row-gap: 3em;
 }
 .conten1 {
+  font-weight: normal;
   margin-left: 20px;
   margin-top: 40px;
-  width: 350px;
-  height: 170px;
+  width: 100%;
+  max-height: 160px;
+  max-width: 300px;
   padding: 24px 40px;
-  background-color: #212121;
+  background: #303030;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 0.5rem;
+  border-radius: 20px;
 }
 .conten1 .comment {
   color: #b1b1b1;
@@ -130,15 +119,18 @@
   row-gap: 0.7rem;
 }
 .conten2 {
-  margin-left: 220px;
-  width: auto;
-  height: auto;
+  font-weight: normal;
+  margin-left: auto;
+  width: 100%;
+  max-height: 200px;
+  max-width: 300px;
   padding: 24px 40px;
-  background-color: #212121;
+  background: #303030;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 0.5rem;
+  border-radius: 20px;
 }
 .conten2 .comment {
   color: #b1b1b1;
@@ -165,9 +157,16 @@ p {
   margin-left: 40px;
   margin-top: 20px;
   color: #b1b1b1;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1000px) {
+  .saludo h1{
+    padding: 1rem 80px;
+  }
+  .descripcion h1 {
+    font-size: 3em;
+  }
   .box-acercade {
     grid-template-columns: 100%;
     padding: 1rem 80px;
@@ -175,9 +174,6 @@ p {
   .acercade cite {
     margin-left: 80px;
     margin-top: 30px;
-  }
-  .conten2 {
-    width: 400px;
   }
   .box-acercade {
     background-size: cover;
@@ -186,19 +182,18 @@ p {
   }
 }
 @media screen and (max-width: 800px) {
+  .acercade {
+    width: 100%;
+  }
   .box-acercade {
     grid-template-columns: 100%;
-    padding: 1rem 80px;
+    /* padding: 1rem 80px; */
   }
   .acercade cite {
-    margin-left: 80px;
-    margin-top: 30px;
+    margin: 0;
   }
   .conten1 {
-    width: 80%;
-  }
-  .conten2 {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
   }
 }
@@ -213,10 +208,12 @@ p {
     font-size: 2.5em;
   }
   .conten1 {
-    width: 80%;
+    width: 100%;
+    max-width: 100%;
   }
   .conten2 {
-    width: 80%;
+    width: 100%;
+    max-width: 100%;
     margin-left: 0;
   }
 }
