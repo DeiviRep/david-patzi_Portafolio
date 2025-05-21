@@ -1,13 +1,23 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import DOMPurify from "dompurify";
 import "../styles/acercade.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import useThema from "../styles/palleta";
+import { socialLinks } from "../config/portfolioData.js";
 
 const Acercademi = ({ acercade }) => {
   const { thema } = useThema();
 
   const cleanHTML = DOMPurify.sanitize(acercade.informacion);
+
+  const mostrarSocial = socialLinks.map((itemSocial, index) => {
+    return (
+      <a className="social" href={itemSocial.url} target="_blank" key={index} title={itemSocial.title}>
+        <itemSocial.social className="icono-social" style={{fontSize: "30px"}} />
+      </a>
+    );
+  });
 
   return (
     <div className="box-acercade-saludo">
@@ -29,6 +39,7 @@ const Acercademi = ({ acercade }) => {
           >
             {/* <p>{acercade.informacion}</p> */}
             <p dangerouslySetInnerHTML={{ __html: cleanHTML }} />
+            <div className="box-social">{mostrarSocial}</div>
             <div>
               <a
                 href="#contact"

@@ -98,9 +98,9 @@ const Navar = ({ logo, social }) => {
                 </Link>
               </li>
             ))}
-            <li className="li-social">
+            {/* <li className="li-social">
               <div className="content-social">{mostrarSocial}</div>
-            </li>
+            </li> */}
           </ul>
           <div className="flecha-sube" onClick={scrollToTop}>
             <ArrowDropUpIcon id="ico-sube" />

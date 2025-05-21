@@ -8,6 +8,15 @@
   background-attachment: fixed;
   background-position: center;
 }
+.box-social {
+  display: flex;
+  gap: 1rem;
+  margin-right: auto;
+}
+.acercade .social {
+  padding: 2vh 2vh;
+  border-radius: 16px;
+}
 .box-acercade {
   display: grid;
   grid-template-columns: 50% 50%;

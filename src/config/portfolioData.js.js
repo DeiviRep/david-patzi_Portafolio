@@ -17,7 +17,7 @@ import GitIcon from "../img/iconos/otros/git.svg?react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import DescriptionIcon from '@mui/icons-material/Description';
 // Technology Icons
 export const technologyIcons = [
   {
@@ -58,6 +58,7 @@ export const projectImages = {
   microshop: require("../img/proyectos/microshop.png"),
   ecommerceSpring: require("../img/proyectos/ecommerceSpring.png"),
   lechinBackend: require("../img/proyectos/lechinBackend.png"),
+  seguimiento: require("../img/proyectos/seguimiento.png"),
 };
 
 // Portfolio Images
@@ -73,11 +74,12 @@ export const socialLinks = [
   //   social: FacebookIcon,
   //   url: "https://www.facebook.com/profile.php?id=100075852762882",
   // },
-  { social: LinkedInIcon, url: "https://acortar.link/bgcEVl" },
-  { social: GitHubIcon, url: "https://github.com/DeiviRep" },
+  { social: LinkedInIcon, url: "https://acortar.link/bgcEVl",title:"Linkedin" },
+  { social: GitHubIcon, url: "https://github.com/DeiviRep",title:"GitHub" },
   {
-    social: MailOutlineIcon,
-    url: "mailto:patzivargasdavid@gmail.com?subject=Apacionados por el desarrollo&body=Hola soy David Patzi escribe aqui la consulta que tengas. :)",
+    social: DescriptionIcon,
+    url: "https://docs.google.com/document/d/1E5p9naGz0tVrbo3IbSkzUxGeNDOcy2gsc55p6jW__RQ/edit?usp=sharing",
+    title:"Hoja de Vida / CV"
   },
 ];
 
@@ -139,9 +141,18 @@ export const projectsData = [
     name: "Sistema de Gestión Académica YATIC",
     url: "https://yatic.agetic.gob.bo/portal",
     img: projectImages.yatic,
-    descripcion: "Desarrollé un sistema completo de gestión académica para YATIC, integrando frontend y backend con tecnologías modernas para optimizar la administración de datos académicos.",
+    descripcion: "Desarrollé un sistema completo de gestión académica YATIC en AGETIC, integrando frontend y backend con tecnologías modernas para optimizar la administración de datos académicos.",
     tecnologiasUsadas: ["Next.js", "Nest.js", "TypeScript", "MaterialUI", "PostgreSQL", "Docker", "Figma"],
     icono: "mdi:school",
+  },
+  {
+    visitar: "Visitar Página",
+    name: "Seguimiento de Proyectos",
+    url: "https://seguimiento.upat.agetic.gob.bo/login",
+    img: projectImages.seguimiento, // Asegúrate de que esta imagen esté definida
+    descripcion: "Participé en el desarrollo full stack del sistema en AGETIC, desde la planificación con Figma y Excel. Me encargué de la experiencia de usuario aplicando diseño UI/UX, ademas de Clean Code y principios SOLID.",
+    tecnologiasUsadas: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "Figma", "Excel", "PM2"],
+    icono: "mdi:account-check",
   },
   {
   visitar: "Ver en GitHub",
