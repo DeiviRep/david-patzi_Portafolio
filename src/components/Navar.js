@@ -63,7 +63,7 @@ const Navar = ({ logo, social }) => {
   ];
   const mostrarSocial = social.map((itemSocial, index) => {
     return (
-      <a href={itemSocial.url} target="_blank">
+      <a href={itemSocial.url} target="_blank" key={index}>
         <itemSocial.social className="icono-social" />
       </a>
     );

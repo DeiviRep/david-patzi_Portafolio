@@ -1,10 +1,14 @@
 import React from "react";
+import DOMPurify from "dompurify";
 import "../styles/acercade.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import useThema from "../styles/palleta";
 
 const Acercademi = ({ acercade }) => {
   const { thema } = useThema();
+
+  const cleanHTML = DOMPurify.sanitize(acercade.informacion);
+
   return (
     <div className="box-acercade-saludo">
       <div className="saludo">
@@ -23,7 +27,8 @@ const Acercademi = ({ acercade }) => {
               // alignItems:'center',
             }}
           >
-            <p>{acercade.informacion}</p>
+            {/* <p>{acercade.informacion}</p> */}
+            <p dangerouslySetInnerHTML={{ __html: cleanHTML }} />
             <div>
               <a
                 href="#contact"
@@ -60,19 +65,19 @@ const Acercademi = ({ acercade }) => {
               <span class="line1">|</span>
             </p>
           </div>
-          <div className="conten2">
+          <div className="conten2" style={{lineHeight: "1.4"}}>
             <p>
               <span class="span">.A que me dedico.</span> {"{"}
             </p>
             <div className="content-array">
               <p class="p">
-                Profesion: <span>Desarrollador web y de apps moviles;</span>
+                Profesión: <span>Software Engineer Developer web;</span>
               </p>
               <p class="p">
-                Markup: <span>HTML;</span>
+                Front-End: <span>[ TypeScript, Next.js, React, UX/UI, Figma ];</span>
               </p>
               <p class="p">
-                Back-End: <span>[ JAVA, JAVA-SCRIPT ];</span>
+                Back-End: <span>[ TypeScript, Nest.js, Node.js, JavaScript, Python, POO  ];</span>
               </p>
             </div>
             <p>

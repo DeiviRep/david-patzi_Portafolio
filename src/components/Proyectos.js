@@ -1,16 +1,16 @@
 import React from "react";
 import "../styles/proyectos.css";
+import { Icon } from "@iconify/react";
 
 const Proyectos = ({ proyectos, nameSeccion }) => {
   const listProyects = proyectos.map((item, index) => (
-    <div className="content-proyecto">
+    <div className="content-proyecto" key={index}>
       <div className="content-img-proyect">
         <img src={item.img} alt="imageProyecto" />
       </div>
-      <div className="content-button">
-        <a href={item.url} target="_blank" rel="noreferrer">
-          <button className="button">{item.visitar}</button>
-        </a>
+      <div style={{alignSelf:"start"}}>
+        <Icon icon={item.icono} width="30" height="30" color="#fff"/>
+        <h3 style={{color:"#fff", margin:0, lineHeight: "32px", fontSize: "24px"}}>{item.name}</h3>
       </div>
       <div className="item-name-descripcion">
         <p>{item.descripcion}</p>
@@ -21,6 +21,11 @@ const Proyectos = ({ proyectos, nameSeccion }) => {
             <p>{itemTecnologia}</p>
           </div>
         ))}
+      </div>
+      <div className="content-button">
+        <a href={item.url} target="_blank" rel="noreferrer">
+          <button className="button">{item.visitar}</button>
+        </a>
       </div>
     </div>
   ));
