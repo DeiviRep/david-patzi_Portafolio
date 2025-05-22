@@ -170,9 +170,6 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-  .saludo h1{
-    padding: 1rem 80px;
-  }
   .descripcion h1 {
     font-size: 3em;
   }
