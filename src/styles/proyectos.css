@@ -130,7 +130,7 @@
 @media screen and (max-width: 687px) {
   .seccion-proyectos {
     /* grid-template-columns: 100%; */
-    padding: 20px 50px;
+    padding: 20px 10px;
   }
   .seccion-proyectos h1 {
     font-size: 2.5em;

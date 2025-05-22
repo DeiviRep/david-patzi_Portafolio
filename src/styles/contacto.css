@@ -81,7 +81,7 @@
   .seccion-contacto {
     height: 100% !important;
     max-height: 1000px !important;
-    padding: 1rem 50px;
+    padding: 1rem 10px;
   }
   .seccion-contacto h1 {
     font-size: 2.5em;

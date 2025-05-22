@@ -108,7 +108,7 @@
 @media screen and (max-width: 687px) {
   .seccion-habilidades {
     /* grid-template-columns: 100%; */
-    padding: 1rem 60px 4rem 60px;
+    padding: 1rem 10px 4rem 10px;
   }
 
   .box-habilidades {

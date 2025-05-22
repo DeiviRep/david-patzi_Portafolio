@@ -204,12 +204,14 @@ p {
   }
 }
 @media screen and (max-width: 687px) {
+  .saludo {
+    padding: 20px 10px !important;
+  }
   .box-acercade {
     grid-template-columns: 100%;
-    padding: 1rem 50px;
+    padding: 1rem 10px;
   }
   .descripcion h1 {
-    padding-left: 4px;
     margin: 0;
     font-size: 2.5em;
   }
@@ -221,5 +223,6 @@ p {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
+    max-height: 100%;
   }
 }

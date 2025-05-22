@@ -61,13 +61,7 @@ const Navar = ({ logo, social }) => {
     },
     { to: "seccion-Contactame", parrafo: "Contáctame", IcoLink: ContactsIcon },
   ];
-  const mostrarSocial = social.map((itemSocial, index) => {
-    return (
-      <a href={itemSocial.url} target="_blank" key={index}>
-        <itemSocial.social className="icono-social" />
-      </a>
-    );
-  });
+  
   return (
     <>
       <header className="header">
@@ -98,9 +92,6 @@ const Navar = ({ logo, social }) => {
                 </Link>
               </li>
             ))}
-            {/* <li className="li-social">
-              <div className="content-social">{mostrarSocial}</div>
-            </li> */}
           </ul>
           <div className="flecha-sube" onClick={scrollToTop}>
             <ArrowDropUpIcon id="ico-sube" />
