@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
 }
 .name-especiality {
-  color: #00dae8;
-  backdrop-filter: blur(7px);
+  /* color: #00dae8; */
+  backdrop-filter: blur(6px);
   background-color: rgba(17, 21, 43, 0.3);
-  padding: 10px 20px;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .name-especiality p {
   font-size: 18px;
-  margin: 2px;
+  /* margin: 2px; */
 }
 .foto-perfil {
   position: absolute;
@@ -31,7 +31,7 @@
   padding: 30px 0;
   justify-content: center;
   /* font-size: 5em; */
-  color: #00dae8;
+  /* color: #00dae8; */
 }
 .saludo h1 {
   font-size: 3em;
@@ -45,17 +45,17 @@
   background-size: cover;
   background-position: center center;
   color: #ffffff; /* Color del texto */
-  padding: 20px;
-  height: 400px; /* Altura del contenedor */
+  height: 600px; /* Altura del contenedor */
   /* Ajustes para centrar y mover la imagen */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 687px) {
+  .rol{
+    padding: 0 10px;
+  }
   .saludo {
-    /* grid-template-columns: 100%; */
-    padding: 0px 50px;
     margin-bottom: 0px;
   }
   .saludo h1 {

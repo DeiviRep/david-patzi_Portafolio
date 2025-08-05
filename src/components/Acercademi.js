@@ -1,24 +1,59 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
+import DOMPurify from "dompurify";
 import "../styles/acercade.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import useThema from "../styles/palleta";
+import { socialLinks } from "../config/portfolioData.js";
 
 const Acercademi = ({ acercade }) => {
+  const { thema } = useThema();
+
+  const cleanHTML = DOMPurify.sanitize(acercade.informacion);
+
+  const mostrarSocial = socialLinks.map((itemSocial, index) => {
+    return (
+      <a className="social" href={itemSocial.url} target="_blank" key={index} title={itemSocial.title}>
+        <itemSocial.social className="icono-social" style={{fontSize: "30px"}} />
+      </a>
+    );
+  });
+
   return (
     <div className="box-acercade-saludo">
       <div className="saludo">
-        <h1>¡Bienvenido/a a mi portafolio!</h1>
+        <h1 style={{  color: "#ffffff", margin: "0", fontWeight: "normal"}}>¡Bienvenido/a a mi portafolio!</h1>
       </div>
       <div className="box-acercade" id="acercade">
         <section className="descripcion">
           <h1>{acercade.name}</h1>
-          <div className="acercade">
-            <p>
-              {acercade.informacion}
-              <a href="#contact">
+          <div
+            className="acercade"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              // justifyContent:'center',
+              // alignItems:'center',
+            }}
+          >
+            {/* <p>{acercade.informacion}</p> */}
+            <p dangerouslySetInnerHTML={{ __html: cleanHTML }} />
+            <div className="box-social">{mostrarSocial}</div>
+            <div>
+              <a
+                href="#contact"
+                style={{
+                  color: thema.palete.light,
+                  borderRadius: "2rem",
+                  padding: "6px",
+                  maxWidth:'120px',
+                }}
+              >
                 <ArrowRightIcon />
                 Contactar
               </a>
-            </p>
+            </div>
             <cite>{acercade.etiqueta}</cite>
           </div>
         </section>
@@ -30,10 +65,10 @@ const Acercademi = ({ acercade }) => {
             </p>
             <div className="content-array">
               <p class="p">
-                Nombres: <span>David Bernardo;</span>
+                Nombre: <span>David Patzi ;</span>
               </p>
               <p class="p">
-                Apellidos: <span>Patzi Vargas;</span>
+                Profesión: <span>Software Engineer Backend Developer;</span>
               </p>
             </div>
             <p>
@@ -41,19 +76,19 @@ const Acercademi = ({ acercade }) => {
               <span class="line1">|</span>
             </p>
           </div>
-          <div className="conten2">
+          <div className="conten2" style={{lineHeight: "1.4"}}>
             <p>
               <span class="span">.A que me dedico.</span> {"{"}
             </p>
             <div className="content-array">
               <p class="p">
-                Profesion: <span>Desarrollador web y de apps moviles;</span>
+                Back-End: <span>[ Java, Spring Boot, TypeScript, Nest.js, Python, Microservicios, POO ];</span>
               </p>
               <p class="p">
-                Markup: <span>HTML;</span>
+                Front-End: <span>[ TypeScript, Next.js, React, UX/UI, Figma ];</span>
               </p>
-              <p class="p">
-                Back-End: <span>[ JAVA, PYTHON, JAVA-SCRIPT ];</span>
+              <p className="p">
+                Otros: <span>[ Docker, PostgreSQL, Git, GitHub, GitLab ];</span>
               </p>
             </div>
             <p>

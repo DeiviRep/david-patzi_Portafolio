@@ -7,14 +7,17 @@ const Presentacion = ({ presentacion }) => {
       <div className="seccion-presentacion">
         <div className="scrolling-img">
           <div className="name-especiality">
-            <h1>{presentacion[0].nivel}</h1>
-            <p>David Bernardo Patzi Vargas</p>
-            <p>{presentacion[0].especialidad1}</p>
+            <img style={{
+              borderRadius: "50%",
+              width: "140px",
+              height: "140px"
+            }} src={presentacion[0].foto} alt="" />
+            <div className="rol">
+              <h1 style={{textTransform:"uppercase",fontSize: "40px",fontWeight: "200", textAlign:"center"}}>David Patzi</h1>
+              <h1 style={{fontSize: "40px",fontWeight: "200"}}>{presentacion[0].nivel}</h1>
+            </div>
           </div>
         </div>
-        {/* <div className="foto-perfil">
-          <img src={presentacion[0].foto} alt="" />
-        </div> */}
       </div>
     </>
   );

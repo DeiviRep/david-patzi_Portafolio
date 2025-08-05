@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 .seccion-contacto {
-  height: auto;
-  padding:2rem 100px;
-  background-color: #131212;
+  border-top: #3b3c40 1px solid;
+  border-bottom: #3b3c40 1px solid;
+  height: 100% !important;
+  max-height: 1000px !important;
+  padding:4rem 100px 6rem 100px;
+  background-color: #1f1d1d;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -12,7 +15,7 @@
 }
 .seccion-contacto h1 {
   font-size: 3em;
-  color: #00dae8;
+  /* color: #00dae8; */
   margin-bottom: 5rem;
 }
 .footer {
@@ -37,7 +40,7 @@
 .boton:hover {
   cursor: pointer;
   border: 1.5px solid rgba(82, 222, 229);
-  background: #131212;
+  background: #1f1d1d;
 }
 .boton:hover {
   color: #00dae8;
@@ -67,6 +70,8 @@
 
 @media screen and (max-width: 1000px) {
   .seccion-contacto {
+    height: 100% !important;
+    max-height: 1000px !important;
     padding: 1rem 80px;
     display: flex;
     flex-direction: column;
@@ -74,7 +79,9 @@
 }
 @media screen and (max-width: 687px) {
   .seccion-contacto {
-    padding: 1rem 50px;
+    height: 100% !important;
+    max-height: 1000px !important;
+    padding: 1rem 10px;
   }
   .seccion-contacto h1 {
     font-size: 2.5em;
