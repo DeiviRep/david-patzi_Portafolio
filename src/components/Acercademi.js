@@ -65,10 +65,10 @@ const Acercademi = ({ acercade }) => {
             </p>
             <div className="content-array">
               <p class="p">
-                Nombres: <span>David Bernardo;</span>
+                Nombre: <span>David Patzi ;</span>
               </p>
               <p class="p">
-                Apellidos: <span>Patzi Vargas;</span>
+                Profesión: <span>Software Engineer Backend Developer;</span>
               </p>
             </div>
             <p>
@@ -82,13 +82,13 @@ const Acercademi = ({ acercade }) => {
             </p>
             <div className="content-array">
               <p class="p">
-                Profesión: <span>Software Engineer Developer web;</span>
+                Back-End: <span>[ Java, Spring Boot, TypeScript, Nest.js, Python, Microservicios, POO ];</span>
               </p>
               <p class="p">
                 Front-End: <span>[ TypeScript, Next.js, React, UX/UI, Figma ];</span>
               </p>
-              <p class="p">
-                Back-End: <span>[ TypeScript, Nest.js, Node.js, JavaScript, Python, POO  ];</span>
+              <p className="p">
+                Otros: <span>[ Docker, PostgreSQL, Git, GitHub, GitLab ];</span>
               </p>
             </div>
             <p>
